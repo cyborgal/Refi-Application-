@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div id="formContainer">
+    <form id="interactiveForm">
+        <div class="slide" id="slide1">
+            <p>Let's get your application started. What's your full name?</p>
+            <input type="text" id="fullName" name="fullName" required>
+            <button type="button" onclick="nextSlide(2)">OK</button>
+        </div>
+        <div class="slide" id="slide2">
+            <p>Nice to meet you, what's your date of birth?</p>
+            <input type="text" placeholder="MM" id="month" name="month" required>
+            <input type="text" placeholder="DD" id="day" name="day" required>
+            <input type="text" placeholder="YYYY" id="year" name="year" required>
+            <button type="submit">OK</button>
+        </div>
+    </form>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
